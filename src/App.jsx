@@ -22,9 +22,7 @@ import StartupPage from "@/pages/StartupPage";
 import BlogPage from "@/pages/BlogPage";
 import BlogDetailPage from "@/pages/BlogDetailPage";
 import ContactPage from "@/pages/ContactPage";
-import AdminLogin from "@/pages/AdminLogin";
 import AdminPage from "@/pages/AdminPage";
-import InscriptionPage from "@/pages/InscriptionPage";
 
 function Layout({ children }) {
   const location = useLocation();
@@ -75,10 +73,8 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/inscription" element={<InscriptionPage />} />
 
           {/* Routes admin AVEC HASH obligatoire */}
-          <Route path="/admin/:hash/login" element={<AdminProtectedRoute component={AdminLogin} />} />
           <Route path="/admin/:hash" element={<AdminProtectedRoute component={AdminPage} />} />
 
           {/* Redirection des routes inconnues */}
