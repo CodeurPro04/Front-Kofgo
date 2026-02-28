@@ -4,13 +4,13 @@ import { useState, useRef, useEffect } from "react";
 import {
   Award,
   ShieldCheck,
-  GitMerge,
+  // GitMerge,
   Globe,
   CircuitBoard,
   CheckCircle,
   Rocket,
   Users,
-  Cpu,
+  // Cpu,
   BarChart2,
   UserCheck,
   Lightbulb,
@@ -515,106 +515,141 @@ const AboutPage = () => {
       </section>
 
       {/* Our Mission */}
-      <section className="py-28 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-6">
-          <motion.div
-            className="text-center mb-20"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
-              Nos{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-300 drop-shadow-lg">
-                Valeurs
-              </span>
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Les principes qui guident nos actions
-            </p>
-          </motion.div>
+      
+     <section className="py-28 bg-gray-50 dark:bg-gray-900">
+  <div className="max-w-7xl mx-auto px-6">
+    <motion.div
+      className="text-center mb-20"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
+      <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+        NOTRE{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-300 drop-shadow-lg">
+          IDENTITE
+        </span>
+      </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                icon: <Rocket className="h-10 w-10 text-emerald-500" />,
-                title: "Excellence",
-                description:
-                  "Nous visons l'excellence dans toutes nos interventions, garantissant des résultats de qualité supérieure en nous engageant à une veille constante des meilleures pratiques et en adaptant nos méthodologies aux besoins spécifiques de chaque client.",
-                principles: [
-                  "Leadership par l'exemple",
-                  "Innovation continue",
-                  "Impact mesurable",
-                ],
-              },
-              {
-                icon: <Users className="h-10 w-10 text-emerald-500" />,
-                title: "Innovation",
-                description:
-                  "Nous encourageons la créativité et l'innovation pour proposer des solutions avant-gardistes en explorant de nouvelles approches, en intégrant les dernières technologies et en stimulant la pensée créative au sein de notre équipe.",
-                principles: [
-                  "Intégrité absolue",
-                  "Excellence opérationnelle",
-                  "Collaboration sans frontières",
-                ],
-              },
-              {
-                icon: <BarChart2 className="h-10 w-10 text-emerald-500" />,
-                title: "Intégrité",
-                description:
-                  "Nous opérons avec honnêteté et transparence, bâtissant ainsi des relations de confiance avec nos clients en communiquant clairement nos démarches, nos recommandations et nos limites.",
-                principles: [
-                  "Solutions sur-mesure",
-                  "Expertise locale + vision globale",
-                  "Accompagnement end-to-end",
-                ],
-              },
-              {
-                icon: <BarChart2 className="h-10 w-10 text-emerald-500" />,
-                title: "Orientation Client",
-                description:
-                  "Nous plaçons les besoins de nos clients au centre de nos préoccupations, assurant des solutions sur mesure en écoutant attentivement leurs objectifs, en nous immergeant dans leur contexte et en coconstruisant des solutions adaptées à leurs défis uniques.",
-                principles: [
-                  "Solutions sur-mesure",
-                  "Expertise locale + vision globale",
-                  "Accompagnement end-to-end",
-                ],
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                whileHover={{ y: -10 }}
-              >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="p-4 bg-emerald-100 dark:bg-emerald-900/20 rounded-xl">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold">{item.title}</h3>
-                </div>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  {item.description}
-                </p>
-                <ul className="space-y-3">
-                  {item.principles.map((principle, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-emerald-500" />
-                      <span className="text-gray-700 dark:text-gray-300">
-                        {principle}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-7xl mx-auto">
+        KOF GO CONSULTING est un cabinet de conseil indépendant dédié à la
+        structuration, la transformation et la performance des organisations en
+        Afrique et en Europe. Nous accompagnons les PME, associations,
+        entrepreneurs et institutions dans leurs projets stratégiques,
+        digitaux et organisationnels. Notre conviction est simple : la
+        performance durable naît de la clarté, de la rigueur et de l’exécution.
+      </p>
+    </motion.div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      {[
+        {
+          icon: <ShieldCheck className="h-10 w-10 text-emerald-500" />,
+          title: "Notre mission",
+          description:
+            "Aider les organisations à gagner en efficacité, en visibilité et en impact grâce à :",
+          principles: [
+            "une stratégie claire",
+            "une organisation structurée",
+            "des outils digitaux performants",
+            "une communication professionnelle",
+            "un accompagnement humain et pragmatique",
+          ],
+        },
+
+        {
+          icon: <ShieldCheck className="h-10 w-10 text-emerald-500" />,
+          title: "Notre approche",
+          description: "Nous combinons :",
+          principles: [
+            "la rigueur des cabinets internationaux",
+            "la proximité d’une équipe à taille humaine",
+            "la compréhension fine des réalités africaines et européennes",
+            "une exécution rapide et orientée résultats",
+          ],
+          description2: "Chaque mission est menée avec :",
+          principe: [
+            "professionnalisme",
+            "confidentialité",
+            "efficacité",
+            "suivi personnalisé",
+          ],
+        },
+
+        {
+          icon: <ShieldCheck className="h-10 w-10 text-emerald-500" />,
+          title: "Nos domaines d’expertise",
+          description: "",
+          principles: [
+            "Conseil stratégique & organisationnel",
+            "Digital & développement web",
+            "Communication & identité visuelle",
+            "Accompagnement opérationnel",
+            "Structuration RH & performance",
+          ],
+        },
+
+        {
+          icon: <ShieldCheck className="h-10 w-10 text-emerald-500" />,
+          title: "Notre ambition",
+          description:
+            "Devenir un cabinet de référence pour les organisations qui veulent se professionnaliser, se digitaliser et se développer durablement.",
+          principles: [],
+        },
+      ].map((item, index) => (
+        <motion.div
+          key={index}
+          className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: index * 0.15 }}
+          whileHover={{ y: -10 }}
+        >
+          <div className="flex items-center gap-4 mb-6">
+            <div className="p-4 bg-emerald-100 dark:bg-emerald-900/20 rounded-xl">
+              {item.icon}
+            </div>
+            <h3 className="text-2xl font-bold">{item.title}</h3>
           </div>
-        </div>
-      </section>
+
+          <p className="text-gray-600 dark:text-gray-300 mb-6">
+            {item.description}
+          </p>
+
+          <ul className="space-y-3 mb-6">
+            {item.principles.map((principle, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-emerald-500" />
+                <span className="text-gray-700 dark:text-gray-300">
+                  {principle}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          {item.description2 && (
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              {item.description2}
+            </p>
+          )}
+
+          {item.principe && (
+            <ul className="space-y-3">
+              {item.principe.map((p, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-emerald-500" />
+                  <span className="text-gray-700 dark:text-gray-300">{p}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
       {/* Nos objectifs */}
       <section className="py-28 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
@@ -626,63 +661,32 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
-              Nos{" "}
+                NOTRE{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-300 drop-shadow-lg">
-                Objectifs
+              PROMESSE
               </span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Ce que nous visons à atteindre pour transformer durablement notre
-              écosystème
+             Un cabinet de conseil à taille humaine, avec l’exigence des grands.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 items-center">
             {[
               {
                 icon: <ShieldCheck className="h-10 w-10 text-emerald-500" />,
-                title: "Développement sécurisé",
-                description:
-                  "Structurer et sécuriser le développement des entreprises africaines et diasporiques avec des cadres solides et des processus fiables.",
+                title: "Nous combinons :",
+                 description:
+                  "Chaque mission est menée avec transparence, exigence et sens du service.",
                 principles: [
-                  "Cadres juridiques adaptés",
-                  "Processus opérationnels optimisés",
-                  "Croissance pérenne garantie",
+                 "la rigueur des cabinets internationaux",
+                 	"la proximité d’une équipe engagée",
+                  "la compréhension des réalités africaines et européennes",
+                 "une exécution rapide et orientée résultats",
+
                 ],
-              },
-              {
-                icon: <GitMerge className="h-10 w-10 text-emerald-500" />,
-                title: "Réduction des écarts",
-                description:
-                  "Combler le fossé entre les ambitions entrepreneuriales et les moyens opérationnels pour un succès tangible.",
-                principles: [
-                  "Accès aux compétences clés",
-                  "Ressources financières adaptées",
-                  "Expertise stratégique accessible",
-                ],
-              },
-              {
-                icon: <Globe className="h-10 w-10 text-emerald-500" />,
-                title: "Accompagnement d'excellence",
-                description:
-                  "Proposer un accompagnement stratégique de proximité tout en maintenant les plus hauts standards internationaux.",
-                principles: [
-                  "Expertise locale contextualisée",
-                  "Standards qualité internationaux",
-                  "Solutions sur-mesure",
-                ],
-              },
-              {
-                icon: <Cpu className="h-10 w-10 text-emerald-500" />,
-                title: "Écosystème innovant",
-                description:
-                  "Favoriser l'émergence d'un écosystème d'affaires dynamique alliant éthique, innovation et performance.",
-                principles: [
-                  "Collaboration multi-acteurs",
-                  "Innovation continue",
-                  "Éthique professionnelle",
-                ],
-              },
+              }
+              
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -717,7 +721,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      {/* 🤝 Notre mission */}
       <section className="py-28 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
@@ -728,49 +731,152 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
-              Notre{" "}
+              {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-300 drop-shadow-lg">
-                Mission
+              POURQUOI NOUS CHOISIR ?
               </span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Ce que nous faisons chaque jour pour concrétiser les ambitions de
-              nos partenaires
+             Une approche unique, pensée pour les organisations en croissance
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          
+            {/* []
+            .map((item, index) => (
+              <motion.div
+                key={index}
+                className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                whileHover={{ y: -10 }}
+              > */}
+              <div className=" items-center gap-4 mb-6 max-w-7xl mx-auto bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700">
+                <div className="flex items-center  mb-6">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                  <h3 className="text-2xl font-bold"> Clarté</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                 Nous simplifions ce qui est complexe et donnons une direction claire.
+                </p>
+                 <div className="flex items-center gap-4 mb-6">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                  <h3 className="text-2xl font-bold"> Rigueur</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                Nous appliquons les standards des cabinets internationaux.
+                </p>
+                 <div className="flex items-center gap-4 mb-6">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                  <h3 className="text-2xl font-bold"> Proximité</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                Nous travaillons avec vous, pas au-dessus de vous.
+                </p>
+               
+               <div className="flex items-center gap-4 mb-6">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                  <h3 className="text-2xl font-bold"> Exécution</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+               Nous livrons des résultats concrets, pas seulement des recommandations.
+                </p>
+                 <div className="flex items-center gap-4 mb-6">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                  <h3 className="text-2xl font-bold text-black">Agilité</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+               Nous nous adaptons à votre réalité, vos ressources et vos priorités.
+                </p>
+               </div>
+              {/* </motion.div>
+            )) */}
+          </div>
+        </div>
+        </section>
+      {/* 🤝 Notre domaine d'expertise */}
+      <section className="py-28 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            className="text-center mb-20"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+              Nos{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-300 drop-shadow-lg">
+              DOMAINES D’EXPERTISE
+              </span>
+            </h2>
+            {/* <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Ce que nous faisons chaque jour pour concrétiser les ambitions de
+              nos partenaires
+            </p> */}
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
                 icon: <UserCheck className="h-10 w-10 text-emerald-500" />,
-                title: "Accompagnement",
+                title: "Conseil stratégique & organisationnel",
                 description:
-                  "Soutenir entrepreneurs et dirigeants dans la réalisation de leurs projets",
+                  "",
                 principles: [
-                  "Écoute active des besoins",
-                  "Solutions personnalisées",
-                  "Suivi à long terme",
+                  "Vision & plan stratégique",
+"Structuration d’entreprise",
+"Processus & gouvernance",
+"Performance & pilotage",
+"Accompagnement du changement",
+
                 ],
               },
               {
                 icon: <Lightbulb className="h-10 w-10 text-emerald-500" />,
-                title: "Transformation",
+                title: "Digital & développement web",
                 description:
-                  "Convertir les idées en solutions opérationnelles et durables",
+                  "",
                 principles: [
-                  "Stratégies innovantes",
-                  "Méthodologies éprouvées",
-                  "Résultats tangibles",
+                 "Sites vitrines",
+                 "Sites e commerce",
+"Développement sur mesure",
+
+"Optimisation & maintenance",
+"Audit digital",
+
                 ],
               },
               {
                 icon: <TrendingUp className="h-10 w-10 text-emerald-500" />,
-                title: "Impact durable",
-                description: "Générer de la valeur et de la croissance pérenne",
+                title: "Communication & identité visuelle",
+                description: "",
                 principles: [
-                  "Vision long terme",
-                  "Impact mesurable",
-                  "Création de valeur partagée",
+                  "Stratégie de communication",
+"Création de contenus",
+"Identité visuelle",
+"Gestion des réseaux sociaux",
+"Campagnes digitales",
+
+
+                ],
+              },
+              {
+                icon: <TrendingUp className="h-10 w-10 text-emerald-500" />,
+                title: "Accompagnement opérationnel",
+                description: "",
+                principles: [
+                  "	Mise en œuvre de projets",
+"	Tableaux de bord",
+"Reporting",
+"Support aux équipes",
+"Suivi opérationnel",
+
+
+
                 ],
               },
             ].map((item, index) => (
@@ -806,6 +912,81 @@ const AboutPage = () => {
             ))}
           </div>
 
+          
+        </div>
+      </section>
+
+<section className="py-28 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            className="text-center mb-20"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+                NOS{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-300 drop-shadow-lg">
+               RÉALISATIONS
+              </span>
+            </h2>
+            
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 items-center">
+            {[
+              {
+                icon: <ShieldCheck className="h-10 w-10 text-emerald-500" />,
+                title: ",",
+                 description:
+                  "Des projets concrets, des résultats mesurables Projet NARAF ",
+                principles: [
+                 " Conception du site web officiel",
+"Analyse des besoins",
+"Design & développement",
+"Mise en ligne",
+"	Accompagnement post lancement",
+
+                ],
+              }
+              
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                whileHover={{ y: -10 }}
+              >
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="p-4 bg-emerald-100 dark:bg-emerald-900/20 rounded-xl">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold">{item.title}</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                  {item.description}
+                </p>
+                <ul className="space-y-3">
+                  {item.principles.map((principle, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-emerald-500" />
+                      <span className="text-gray-700 dark:text-gray-300">
+                        {principle}
+                      </span>
+                    </li>
+                    
+                  ))}
+                </ul>
+
+              </motion.div>
+            
+            ))}
+           
+          </div>
           <motion.div
             className="mt-16 max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700"
             initial={{ opacity: 0, y: 30 }}
@@ -814,13 +995,15 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-gray-700 dark:text-gray-300 text-center text-lg leading-relaxed italic">
-              "Notre engagement : transformer les ambitions en réalisations
-              concrètes pour un impact durable"
+              "KOF GO CONSULTING accompagne les PME, associations, entrepreneurs et institutions en Afrique et en Europe dans leurs projets de transformation, de structuration et de digitalisation."<br/>
+<strong>Clarté, Rigueur, Exécution.</strong>
+
             </p>
           </motion.div>
         </div>
-      </section>
 
+      </section>
+      
       <section className="py-20 px-4 sm:px-6 max-w-7xl mx-auto relative overflow-hidden">
         {/* Message du Directeur Général */}
         <motion.div
