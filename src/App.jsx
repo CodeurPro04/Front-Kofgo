@@ -23,7 +23,7 @@ import BlogPage from "@/pages/BlogPage";
 import BlogDetailPage from "@/pages/BlogDetailPage";
 import ContactPage from "@/pages/ContactPage";
 import AdminPage from "@/pages/AdminPage";
-
+import OFFRE from "@/pages/offres";
 function Layout({ children }) {
   const location = useLocation();
   const hideNavFooter = location.pathname.startsWith("/admin");
@@ -73,6 +73,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/offres" element={<OFFRE />} />
 
           {/* Routes admin AVEC HASH obligatoire */}
           <Route path="/admin/:hash" element={<AdminProtectedRoute component={AdminPage} />} />

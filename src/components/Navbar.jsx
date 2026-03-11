@@ -46,6 +46,11 @@ const Navbar = ({ scrollToSection }) => {
     icon: <Trophy className="w-5 h-5 mr-2" />,
   },
   {
+    path: "/offres",
+    labelKey: "offre",
+    icon: <Trophy className="w-5 h-5 mr-2" />,
+  },
+  {
     path: "/startup",
     labelKey: "nav.startup",
     icon: <Rocket className="w-5 h-5 mr-2" />,

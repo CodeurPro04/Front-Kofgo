@@ -221,8 +221,10 @@ const ContactPage = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Nous sommes à votre écoute pour concrétiser vos projets et répondre
-            à vos questions
+           Parlons de votre projet<br/>
+Vous souhaitez structurer votre organisation, améliorer votre communication ou développer un outil digital ?
+Nous serons ravis d’en discuter.
+
           </motion.p>
         </div>
       </section>
