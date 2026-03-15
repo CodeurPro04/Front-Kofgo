@@ -11,6 +11,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
+import MaintenancePage from "@/components/MaintenancePage";
 import { useTranslation } from "react-i18next";
 
 // Pages
@@ -55,10 +56,15 @@ function AdminProtectedRoute({ component: Component }) {
 
 function App() {
   const { i18n } = useTranslation();
+  const isMaintenanceMode = import.meta.env.VITE_MAINTENANCE_MODE === "true";
 
   React.useEffect(() => {
     document.documentElement.classList.remove("dark");
   }, []);
+
+  if (isMaintenanceMode) {
+    return <MaintenancePage />;
+  }
 
   return (
     <Router>
