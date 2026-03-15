@@ -755,38 +755,38 @@ const AboutPage = () => {
                 whileHover={{ y: -10 }}
               > */}
               <div className=" items-center gap-4 mb-6 max-w-7xl mx-auto bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700">
-                <div className="flex items-center  mb-6">
-                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                <div className="flex items-center  mb-6 text-emerald-500">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 " />
                   <h3 className="text-2xl font-bold"> Clarté</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                  Nous simplifions ce qui est complexe et donnons une direction claire.
                 </p>
-                 <div className="flex items-center gap-4 mb-6">
-                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                 <div className="flex items-center gap-4 mb-6 text-emerald-500">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 " />
                   <h3 className="text-2xl font-bold"> Rigueur</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                 Nous appliquons les standards des cabinets internationaux.
                 </p>
-                 <div className="flex items-center gap-4 mb-6">
-                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+                 <div className="flex items-center gap-4 mb-6 text-emerald-500">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 " />
                   <h3 className="text-2xl font-bold"> Proximité</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                 Nous travaillons avec vous, pas au-dessus de vous.
                 </p>
                
-               <div className="flex items-center gap-4 mb-6">
-                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
+               <div className="flex items-center gap-4 mb-6 text-emerald-500">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 " />
                   <h3 className="text-2xl font-bold"> Exécution</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                Nous livrons des résultats concrets, pas seulement des recommandations.
                 </p>
-                 <div className="flex items-center gap-4 mb-6">
-                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 text-black" />
-                  <h3 className="text-2xl font-bold text-black">Agilité</h3>
+                 <div className="flex items-center gap-4 mb-6 text-emerald-500">
+                 <CheckCircle className="flex-shrink-0 mt-1 h-5 w-5 " />
+                  <h3 className="text-2xl font-bold ">Agilité</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                Nous nous adaptons à votre réalité, vos ressources et vos priorités.
@@ -938,7 +938,7 @@ const AboutPage = () => {
             {[
               {
                 icon: <ShieldCheck className="h-10 w-10 text-emerald-500" />,
-                title: ",",
+                title: "",
                  description:
                   "Des projets concrets, des résultats mesurables Projet NARAF ",
                 principles: [

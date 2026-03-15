@@ -12,6 +12,7 @@ import {
   Rocket,
   Newspaper,
   Mail,
+  Package,
   GraduationCap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -47,8 +48,8 @@ const Navbar = ({ scrollToSection }) => {
   },
   {
     path: "/offres",
-    labelKey: "offre",
-    icon: <Trophy className="w-5 h-5 mr-2" />,
+    labelKey: "Offre",
+    icon: <Package className="w-5 h-5 mr-2" />,
   },
   {
     path: "/startup",

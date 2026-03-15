@@ -1,21 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import {
   CheckCircle,
-  ArrowRight,
-  ChevronRight,
-  Star,
-  Trophy,
-  Award,
-  Zap,
-  BarChart2,
+  Target,
   Globe,
-  Users,
+  Palette,
   TrendingUp,
- UserCheck,
-  Lightbulb ,
+  UserCheck,
+  Lightbulb
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 const AnimatedText = ({ text, className }) => {
   return (
     <motion.h1
@@ -97,60 +91,45 @@ function OFFRE() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              {
-                icon: <UserCheck className="h-10 w-10 text-emerald-500" />,
-                title: "Restructuration & transformation d'entreprise",
-                description:
-                  "restructurer avec méthode , restaurer la performence et sécuriser la croissance.",
-                intervention: [
-                 "Diagnostic stratégique 360°",
-"Analyse organisationnelle",
-"Plan de restructuration
-détaillé",
-"Réorganisation RH",
-"Optimisation des processus",
-"Pilotage opérationnel de la
-transformation",
-"Accompagnement 90 jours",
-
-                ],
-              },
-              {
-                icon: <Lightbulb className="h-10 w-10 text-emerald-500" />,
-                title: "Vision & Positionnement stratégique",
-                description:
-                  "clarifier la visions , les priorités et les axes de développement.",
-                intervention: [
-                 "Séminaire stratégique
-dirigeant",
-"Analyse marché &
-concurrence",
-"Définition des axes
-stratégiques",
-"Élaboration du plan
-d’action annuel",
-"Mise en place des
-indicateurs clés (KPIs)",
-
-                ],
-              },
-              {
-                icon: <TrendingUp className="h-10 w-10 text-emerald-500" />,
-                title: "optimisation organisionnelle & processus",
-                description: "fluidifier l'organisation et renforcer l'éfficacité. ",
-                intervention: [
-             "Cartographie des
-processus",
-"Identification des
-doublons et frictions",
-"Redéfinition des rôles",
-"Organigramme cible",
-"Mise en place de rituels de
-pilotage",
-
-
-                ],
-              },
+             {
+  icon: <UserCheck className="h-10 w-10 text-emerald-500" />,
+  title: "Restructuration & transformation d'entreprise",
+  description:"Restructurer avec méthode, restaurer la performance et sécuriser la croissance.",
+  intervention: [
+    "Diagnostic stratégique 360°",
+    "Analyse organisationnelle",
+    "Plan de restructuration détaillé",
+    "Réorganisation RH",
+    "Optimisation des processus",
+    "Pilotage opérationnel de la transformation",
+    "Accompagnement 90 jours",
+  ],
+},
+{
+  icon: <Lightbulb className="h-10 w-10 text-emerald-500" />,
+  title: "Vision & Positionnement stratégique",
+  description: "Clarifier la vision, les priorités et les axes de développement.",
+  intervention: [
+    "Séminaire stratégique dirigeant",
+    "Analyse marché & concurrence",
+    "Définition des axes stratégiques",
+    "Élaboration du plan d’action annuel",
+    "Mise en place des indicateurs clés (KPIs)",
+  ],
+},
+{
+  icon: <TrendingUp className="h-10 w-10 text-emerald-500" />,
+  title: "Optimisation organisationnelle & processus",
+  description:
+    "Fluidifier l'organisation et renforcer l'efficacité.",
+  intervention: [
+    "Cartographie des processus",
+    "Identification des doublons et frictions",
+    "Redéfinition des rôles",
+    "Organigramme cible",
+    "Mise en place de rituels de pilotage",
+  ],
+},
               
             ].map((item, index) => (
               <motion.div
@@ -219,29 +198,22 @@ PERFORMANCE */}
               {
                 icon: <UserCheck className="h-10 w-10 text-emerald-500" />,
                 title: "Structuration des Rôles & Fiches de Poste.",
-                description:
-                  "clarifier les responsabilités et aligner les équipes sur la stratégie.",
+                description:"clarifier les responsabilités et aligner les équipes sur la stratégie.",
                 intervention: [
                  "Analyse des missions",
-"Rédaction des fiches de
-poste",
-"Définition des
-compétences clés",
-"Alignement stratégique
-des fonctions",
+"Rédaction des fiches de poste",
+"Définition des compétences clés",
+"Alignement stratégique des fonctions",
                 ],
               },
               {
                 icon: <Lightbulb className="h-10 w-10 text-emerald-500" />,
                 title: "Système d’Objectifs & Performance",
-                description:
-                  "installer une culture de
-responsabilité et de résultats.",
+                description:"installer une culture de responsabilité et de résultats.",
                 intervention: [
                  "Définition d’objectifs SMART",
 "Mise en place des KPIs",
-"Alignement individuel /
-collectif",
+"Alignement individuel / collectif",
 "Suivi trimestriel structuré",
 
                 ],
@@ -255,8 +227,7 @@ collectif",
 "Gestion des compétences",
 "Mobilité interne",
 "Gestion des conflits",
-"Développement de la culture
-d’entreprise",
+"Développement de la culture d’entreprise",
 
 
                 ],
@@ -300,7 +271,7 @@ d’entreprise",
         </div>
       </section>
       
-//       FORMATIONS PROFESSIONNELLES PREMIUM
+{/* //       FORMATIONS PROFESSIONNELLES PREMIUM */}
   <section className="py-28 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
@@ -329,23 +300,19 @@ d’entreprise",
                 icon: <UserCheck className="h-10 w-10 text-emerald-500" />,
                 title: "Piloter une Restructuration d’Entreprise",
                 description:"",
-                  {/* "Formation phare du cabine", */}
+      
                 intervention: [
                 "Diagnostic 360°",
-"Élaboration d’un plan
-de restructuration",
-"Leadership en période
-de crise",
+"Élaboration d’un plan de restructuration",
+"Leadership en période de crise",
 "Réorganisation RH",
 "Pilotage par indicateurs",
                 ],
               },
               {
                 icon: <Lightbulb className="h-10 w-10 text-emerald-500" />,
-                title: "Leadership
-& Management",
-                description:
-                  "",
+                title: "Leadership & Management",
+                description:"",
                 intervention: [
                  "Leadership moderne",
 "Communication managériale",
@@ -363,9 +330,7 @@ de crise",
                 "Objectifs & KPIs",
 "Tableaux de bord",
 "Rituels de pilotage",
-"Feedback &
-coaching
-managérial",
+"Feedback & coaching managérial",
                 ],
               },
                {
@@ -373,13 +338,11 @@ managérial",
                 title: "Organisation & Gestion du Changement ",
                 description: "",
                 intervention: [
-                "Cartographie des
-processus",
-"Optimisation
-opérationnelle",
+                "Cartographie des processus",
+"Optimisation opérationnelle",
 "Conduite du changement",
 ],
-              },
+              }
               
             ].map((item, index) => (
               <motion.div
@@ -445,10 +408,9 @@ opérationnelle",
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: <UserCheck className="h-10 w-10 text-emerald-500" />,
+                icon: <Globe className="h-10 w-10 text-emerald-500" />,
                 title: "Création de Site Web Professionnel",
-                description:
-                  "Renforcer la crédibilité digital.",
+                
                 intervention: [
                 "Site vitrine professionnel",
 "Pages services",
@@ -458,10 +420,9 @@ opérationnelle",
                 ],
               },
               {
-                icon: <Lightbulb className="h-10 w-10 text-emerald-500" />,
+                icon: <Palette className="h-10 w-10 text-emerald-500" />,
                 title: " Identité Visuelle & Branding",
-                description:
-                  "Renforcer la crédibilité digital",
+                
                 intervention: [
                  "Création de logo",
 "Charte graphique",
@@ -471,20 +432,17 @@ opérationnelle",
                 ],
               },
               {
-                icon: <TrendingUp className="h-10 w-10 text-emerald-500" />,
+                icon: <Target className="h-10 w-10 text-emerald-500" />,
                 title: "Communication Corporate & Outils Stratégique",
-                description: " ",
+                
                 intervention: [
-                "Définition des messages
-clés",
-"Pitch commercial",
-"Présentations
-professionnelles",
-"Supports internes de
-communication",
+                "Définition des messages clés",
+                "Pitch commercial",
+                "Présentations professionnelles",
+                "Supports internes de communication",
 
 
-                ],
+                               ],
               },
               
             ].map((item, index) => (
@@ -503,9 +461,7 @@ communication",
                   </div>
                   <h3 className="text-2xl font-bold">{item.title}</h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  {item.description}
-                </p>
+                
                 <ul className="space-y-3 text-gray-600">
                
                   {item.intervention.map((intervention, i) => (
@@ -549,43 +505,38 @@ communication",
               {
                 icon: <UserCheck className="h-10 w-10 text-emerald-500" />,
                 title: "Accompagnement Dirigeant 90 Jours",
-                
                 intervention: [
                 "Coaching stratégique",
-"Priorisation des actions",
-"Suivi hebdomadaire",
-"Mise en place des
-indicateurs",
-"Résultats mesurables",
-                ],
+ "Priorisation des actions",
+ "Suivi hebdomadaire",
+ "Mise en place des indicateurs",
+ "Résultats mesurables",
+              ],
               },
-              {/* continue */}
+              
               {
                 icon: <Lightbulb className="h-10 w-10 text-emerald-500" />,
-                title: " Identité Visuelle & Branding",
-                description:
-                  "Renforcer la crédibilité digital",
+                title: "  Audit Flash 360° 7 Jours",
+                
                 intervention: [
-                 "Création de logo",
-"Charte graphique",
-"Templates professionnels",
-"Supports de communication",
+                 "Analyse financière",
+"Analyse organisationnelle",
+"Analyse RH",
+"Analyse stratégique",
+"Rapport détaillé + recommandations",
 
                 ],
               },
               {
                 icon: <TrendingUp className="h-10 w-10 text-emerald-500" />,
-                title: "Communication Corporate & Outils Stratégique",
-                description: " ",
+                title: "Programme Croissance & Structuration",
+                
                 intervention: [
-                "Définition des messages
-clés",
-"Pitch commercial",
-"Présentations
-professionnelles",
-"Supports internes de
-communication",
-
+"Organisation cible",
+"Structuration des processus",
+"RH & management",
+"Pilotage stratégique",
+"Sécurisation de la croissance",
 
                 ],
               },
