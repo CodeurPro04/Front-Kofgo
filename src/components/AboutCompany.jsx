@@ -813,10 +813,7 @@ const AboutPage = () => {
               DOMAINES D’EXPERTISE
               </span>
             </h2>
-            {/* <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Ce que nous faisons chaque jour pour concrétiser les ambitions de
-              nos partenaires
-            </p> */}
+           
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -6,7 +6,6 @@ import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
 import RealisationsSection from '@/components/RealisationsSection';
 import StartupSection from '@/components/StartupSection';
-import BlogSection from '@/components/BlogSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
 import StartupModal from '@/components/StartupModal';
@@ -137,7 +136,7 @@ const HomePage = () => {
         <PartnersSection />
         <RealisationsSection />
         <StartupSection />
-        <BlogSection />
+       
         <TestimonialsSection />
         <div id="NewsLetter"><ContactSection /></div>
       </motion.div>

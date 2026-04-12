@@ -16,7 +16,7 @@ import axios from "axios";
 import { Dialog } from "@headlessui/react";
 import { toast } from "@/components/ui/use-toast";
 
-const ContactPage = () => {
+export default function ContactSection() { 
   const [isOpen, setIsOpen] = useState(false); // ✅ définis ici
   const [formData, setFormData] = useState({
     name: "",
@@ -819,4 +819,4 @@ Nous serons ravis d’en discuter.
   );
 };
 
-export default ContactPage;
+
